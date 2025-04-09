@@ -149,120 +149,8 @@ a:hover {
   transition: 0.5s;
 }
 
-@keyframes slideUp {
-  from {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 
-@keyframes slideRight {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(400px); 
-  }
-}
-
-@keyframes slideLeft {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-400px); 
-  }
-}
-
-@keyframes slideRightReverse {
-  from {
-    transform: translateX(400px);
-  }
-  to {
-    transform: translateX(0); 
-  }
-}
-
-@keyframes slideLeftReverse {
-  from {
-    transform: translateX(-400px); 
-  }
-  to {
-    transform: translateX(0); 
-  }
-}
-
-
-
-@keyframes slideDown {
-  from {
-    transform: translateY(-100%); 
-    opacity: 0; 
-  }
-  to {
-    transform: translateY(0); 
-    opacity: 1; 
-  }
-}
-
-
-@keyframes zoom {
-  0% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: scale(1); 
-  }
-}
-
-/* Animation for Pic and Text4 */
-@keyframes slideUpOnScroll {
-  from {
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-
-
-.about-me, .pic, .text4,.download-cv-btn {
- 
-  transform: translateY(50px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.about-me.animate,.pic.animate, .text4.animate, .download-cv-btn.animate{
-  opacity: 1;
-  animation: slideUp 2s ease forwards ;
-}
-
-.download-cv-btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #958d81;
-  color: white;
-  text-decoration: none;
-  border-radius: 7px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.download-cv-btn:hover {
-  background-color: white;
-  color: #958d81;
-  
-}
-
-
+/*about*/
 
 .about{
   display: block;
@@ -284,8 +172,8 @@ a:hover {
   height: 70%;
   
 }
-.about-me {
 
+.about-me {
   font-size: 3vh;
   border-radius: 20px;
   padding: 41px;
@@ -294,8 +182,25 @@ a:hover {
   box-sizing: border-box; 
 }
 
+.download-cv-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #958d81;
+  color: white;
+  text-decoration: none;
+  border-radius: 7px;
+  font-weight: bold;
+  transition: 0.3s;
+}
 
+.download-cv-btn:hover {
+  background-color: white;
+  color: #958d81;
+  
+}
 
+/*skills*/
 
 .services {
   max-width: 600px;
@@ -347,12 +252,6 @@ a:hover {
   border-radius: 4px;
   transition: width 0.3s ease; 
 }
-#projects{
-  background-color: #c9c2b1;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
 
 .percentage {
   margin-top: 5px;
@@ -372,6 +271,14 @@ a:hover {
   background-color: #006c3f33; 
   margin: 40px 0; 
 }
+
+#projects{
+  background-color: #c9c2b1;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
 
 #hamburger-nav{
   display: none;
@@ -659,4 +566,88 @@ a:hover {
 .hidden {
   display: none;
 }
+
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(400px); 
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-400px); 
+  }
+}
+
+@keyframes slideRightReverse {
+  from {
+    transform: translateX(400px);
+  }
+  to {
+    transform: translateX(0); 
+  }
+}
+
+@keyframes slideLeftReverse {
+  from {
+    transform: translateX(-400px); 
+  }
+  to {
+    transform: translateX(0); 
+  }
+}
+
+
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%); 
+    opacity: 0; 
+  }
+  to {
+    transform: translateY(0); 
+    opacity: 1; 
+  }
+}
+
+
+@keyframes zoom {
+  0% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1); 
+  }
+}
+
+/* Animation for Pic and Text4 */
+@keyframes slideUpOnScroll {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 

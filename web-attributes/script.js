@@ -3,55 +3,6 @@ window.addEventListener('scroll', function() {
   const text1 = document.querySelector('.text1');
   const text2 = document.querySelector('.text2');
   const text3 = document.querySelector('.text3');
-  
-  let scrollPosition = window.scrollY;
-
-  if (scrollPosition > 100) {
-    // Apply animations when scrolling down
-    text1.style.animation = "slideRight 1s ease forwards";
-    text2.style.animation = "slideLeft 1s ease forwards";
-    text3.style.animation = "slideRight 1s ease forwards";
-  } else {
-    if (text1.style.animation.includes('slideRight')) {
-      text1.style.animation = "slideRightReverse 1s ease forwards";
-      text2.style.animation = "slideLeftReverse 1s ease forwards";
-      text3.style.animation = "slideRightReverse 1s ease forwards";
-    }
-  }
-});
-
-// Intersection observer for About section animations
-document.addEventListener('DOMContentLoaded', function () {
-  const aboutSection = document.getElementById('about');
-  const elementsToAnimate = document.querySelectorAll('.pic, .text4, .about-me,.download-cv-btn');
-
-  const observerOptions = {
-    threshold: 0.1 
-  };
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('animate');
-      } else {
-        entry.target.classList.remove('animate');
-      }
-    });
-  }, observerOptions);
-
-  elementsToAnimate.forEach(element => observer.observe(element));
-
-  // When the About section is clicked, trigger the animation
-  const aboutLink = document.querySelector('.button2');
-  aboutLink.addEventListener('click', function (e) {
-    e.preventDefault(); // Prevent default anchor behavior
-    window.location.hash = '#about'; // Scroll to the About section
-    
-    // Add 'active' class to trigger animations
-    setTimeout(() => {
-      aboutSection.classList.add('active');
-    }, 300); // Adding a small delay to ensure smooth scroll
-  });
 });
 
 // Hamburger menu toggle
