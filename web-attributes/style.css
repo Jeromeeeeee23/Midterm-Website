@@ -234,14 +234,14 @@ a:hover {
 
 
 .about-me, .pic, .text4,.download-cv-btn {
-  opacity: 0; /* Start hidden */
+ 
   transform: translateY(50px);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .about-me.animate,.pic.animate, .text4.animate, .download-cv-btn.animate{
   opacity: 1;
-  animation: slideUpOnScroll 1s ease forwards;
+  animation: slideUp 2s ease forwards ;
 }
 
 .download-cv-btn {
