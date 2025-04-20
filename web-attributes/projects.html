@@ -13,25 +13,48 @@
     <title>Projects | Lyanz Jerome</title>
 </head>
 <body>
-    <nav class="desktop-nav">
-        <div class="logo">Lyanz™</div>
-        <ul class="nav-links">
+  <section class="section nav">
+    <div>
+      <nav class="desktop-nav">
+          <div class="logo">Lyanz™</div>
+          <ul class="nav-links">
             <li> <a href="home.html" class="button1">HOME</a></li>
-            <li><a href="about.html" class="button2">ABOUT</a></li>
+            <li><a href="about.html" class="button2">RESUME</a></li>
             <li><a href="skills.html" class="button3">SKILLS</a></li>
             <li><a href="projects.html" class="button4">PROJECTS</a></li>
+            <li><a href="learnings.html" class="button4">LEARNINGS</a></li>
+            <li><a href="future.html" class="button4">FUTURE</a></li>
             <li><a href="contact.html" class="button5">LET'S TALK</a></li>
-        </ul>
-    </div>
-    </nav>
-
-
+          </ul>
+        </div>
+      </nav>
+        <nav id="hamburger-nav">
+          <div class="logo">Lyanz™</div>
+            <div class="hamburger-menu">
+              <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="menu-links">
+                <li><a href="home.html" class="button1"  onclick="toggleMenu()"">HOME</a></li>
+                <li><a href="about.html" class="button2"  onclick="toggleMenu()">ABOUT</a></li>
+                <li><a href="skills.html" class="button3"  onclick="toggleMenu()">SKILLS</a></li>
+                <li><a href="projects.html" class="button4"  onclick="toggleMenu()">PROJECTS</a></li>
+                <li><a href="projects.html" class="button4"  onclick="toggleMenu()">PROJECTS</a></li>
+                <li><a href="#" class="button5"  onclick="toggleMenu()">LET'S TALK</a></li>
+              </div>
+          </div>
+        </nav>
+        
+    </section>
+<section class="section nav" data-reveal="top" data-reveal-delay="0.2s">
     <section id="projects">
-      <div class="container">
+      <div class="container1"  data-reveal="bottom" data-reveal-delay="0.5">
         <h3 class="text-center section-subheading">-  Projects  -</h3>
         <h1 class="text-center section-heading">Photograpy</h1>
       </div>
-      <div class="container">
+      <div class="container-tranding" data-reveal="bottom" data-reveal-delay="0.5">
         <div class="swiper tranding-slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide tranding-slide">
@@ -126,14 +149,16 @@
               <div class="swiper-pagination"></div>
             </div>
     </section>
-    <section id="projects">
-      <div class="container">
+    <br><br><br>
+    <section id="projects" data-reveal="bottom" data-reveal-delay="0.5">
+      <div class="container1"  data-reveal="bottom" data-reveal-delay="0.5">
         <h1 class="text-center section-heading">Cinematography</h1>
           </div>
-          <div class="container video-container">
+          <div class="container1 video-container" data-reveal="bottom" data-reveal-delay="0.5">
             <iframe src="https://drive.google.com/file/d/1jpc_p4dGViSfec9BQ02Um0pwu4mXiCnp/preview" width="100%" height="600" allow="autoplay"></iframe>
           </div>
         </div>
+    </section>
     </section>
 
   

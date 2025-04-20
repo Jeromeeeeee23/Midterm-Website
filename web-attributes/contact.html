@@ -13,39 +13,46 @@
         <title>Contact | Lyanz Jerome</title>
 </head>
 <body>
-    <nav class="desktop-nav">
-        <div class="logo">Lyanz™</div>
-        <ul class="nav-links">
-        <li> <a href="home.html" class="button1">HOME</a></li>
-        <li><a href="about.html" class="button2">ABOUT</a></li>
-        <li><a href="#services" class="button3">SKILLS</a></li>
-        <li><a href="#projects" class="button4">PROJECTS</a></li>
-        <li><a href="#contact" class="button5">LET'S TALK</a></li>
-        </ul>
-      </div>
-  </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Lyanz™</div>
-        <div class="hamburger-menu">
-          <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+  <section class="section nav">
+    <div>
+      <nav class="desktop-nav">
+          <div class="logo">Lyanz™</div>
+          <ul class="nav-links">
+            <li> <a href="home.html" class="button1">HOME</a></li>
+            <li><a href="about.html" class="button2">RESUME</a></li>
+            <li><a href="skills.html" class="button3">SKILLS</a></li>
+            <li><a href="projects.html" class="button4">PROJECTS</a></li>
+            <li><a href="learnings.html" class="button4">LEARNINGS</a></li>
+            <li><a href="future.html" class="button4">FUTURE</a></li>
+            <li><a href="contact.html" class="button5">LET'S TALK</a></li>
+          </ul>
+        </div>
+      </nav>
+        <nav id="hamburger-nav">
+          <div class="logo">Lyanz™</div>
+            <div class="hamburger-menu">
+              <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="menu-links">
+                <li><a href="home.html" class="button1"  onclick="toggleMenu()"">HOME</a></li>
+                <li><a href="about.html" class="button2"  onclick="toggleMenu()">ABOUT</a></li>
+                <li><a href="skills.html" class="button3"  onclick="toggleMenu()">SKILLS</a></li>
+                <li><a href="projects.html" class="button4"  onclick="toggleMenu()">PROJECTS</a></li>
+                <li><a href="projects.html" class="button4"  onclick="toggleMenu()">PROJECTS</a></li>
+                <li><a href="#" class="button5"  onclick="toggleMenu()">LET'S TALK</a></li>
+              </div>
           </div>
-            <div class="menu-links">
-            <li><a href="#BGC" class="button1"  onclick="toggleMenu()"">HOME</a></li>
-            <li><a href="#about" class="button2"  onclick="toggleMenu()">ABOUT</a></li>
-            <li><a href="#services" class="button3"  onclick="toggleMenu()">SKILLS</a></li>
-            <li><a href="#projects" class="button4"  onclick="toggleMenu()">PROJECTS</a></li>
-            <li><a href="#" class="button5"  onclick="toggleMenu()">LET'S TALK</a></li>
-          </div>
-      </div>
-    </nav>
+        </nav>
+        
+    </section>
     
-    <section id="contact">
+    <section id="contact"data-reveal="top" data-reveal-delay="0.5s">
         <div class="contact-container">
           <h2>Contact Me</h2>
-          <div class="contact-form">
+          <div class="contact-form" data-reveal="top" data-reveal-delay="1s">
             <form id="contactForm">
               <label for="name">Name</label>
               <input type="text" id="name" name="name" required>
@@ -60,7 +67,7 @@
             </form>
             <p id="formResponse" class="hidden"></p>
           </div>
-          <div class="contact-icons">
+          <div class="contact-icons" data-reveal="top" data-reveal-delay="1.5s">
             <a href="https://www.facebook.com/lj.navarette/" target="_blank" class="contact-icon">
               <i class="fab fa-facebook-f"></i>
               <span>Facebook</span>
