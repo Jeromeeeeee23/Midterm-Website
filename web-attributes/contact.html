@@ -1,98 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="mediaqueries.css">
-        <link rel="icon" href="Pics/alon.png" type="image/x-icon">
-        
-        <title>Contact | Lyanz Jerome</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="icon" href="Pics/alon.png" type="image/x-icon" />
+  <title>Contact | Lyanz Jerome</title>
 </head>
 <body>
-  <section class="section nav">
-    <div>
-      <nav class="desktop-nav">
-          <div class="logo">Lyanz™</div>
-          <ul class="nav-links">
-            <li> <a href="home.html" class="button1">HOME</a></li>
-            <li><a href="about.html" class="button2">RESUME</a></li>
-            <li><a href="skills.html" class="button3">SKILLS</a></li>
-            <li><a href="projects.html" class="button4">PROJECTS</a></li>
-            <li><a href="learnings.html" class="button4">LEARNINGS</a></li>
-            <li><a href="future.html" class="button4">FUTURE</a></li>
-            <li><a href="contact.html" class="button5">LET'S TALK</a></li>
-          </ul>
-        </div>
-      </nav>
-        <nav id="hamburger-nav">
-          <div class="logo">Lyanz™</div>
-            <div class="hamburger-menu">
-              <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <div class="menu-links">
-                <li><a href="home.html" class="button1"  onclick="toggleMenu()"">HOME</a></li>
-                <li><a href="about.html" class="button2"  onclick="toggleMenu()">ABOUT</a></li>
-                <li><a href="skills.html" class="button3"  onclick="toggleMenu()">SKILLS</a></li>
-                <li><a href="projects.html" class="button4"  onclick="toggleMenu()">PROJECTS</a></li>
-                <li><a href="projects.html" class="button4"  onclick="toggleMenu()">PROJECTS</a></li>
-                <li><a href="#" class="button5"  onclick="toggleMenu()">LET'S TALK</a></li>
-              </div>
-          </div>
-        </nav>
-        
-    </section>
-    
-    <section id="contact"data-reveal="top" data-reveal-delay="0.5s">
-        <div class="contact-container">
-          <h2>Contact Me</h2>
-          <div class="contact-form" data-reveal="top" data-reveal-delay="1s">
-            <form id="contactForm">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" required>
-              
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required>
-              
-              <label for="message">Message</label>
+  <!-- Navigation Section -->
+ <!-- Navigation Section -->
+ <nav class="desktop-nav">
+  <div class="logo">Lyanz™</div>
+  <ul class="nav-links">
+    <li><a href="home.html" class="button1">HOME</a></li>
+    <li><a href="about.html" class="button2">RESUME</a></li>
+    <li><a href="skills.html" class="button3">SKILLS</a></li>
+    <li><a href="projects.html" class="button4">PROJECTS</a></li>
+    <li><a href="learnings.html" class="button4">LEARNINGS</a></li>
+    <li><a href="future.html" class="button4">FUTURE</a></li>
+    <li><a href="contact.html" class="button5">LET'S TALK</a></li>
+  </ul>
+</nav>
+
+<!-- Hamburger (Mobile) Navigation -->
+<nav id="hamburger-nav">
+  
+  <div class="hamburger-menu">
+    <div class="logo">Lyanz™</div>
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="menu-links">
+      <li><a href="home.html" class="button1" onclick="toggleMenu()">HOME</a></li>
+      <li><a href="about.html" class="button2" onclick="toggleMenu()">ABOUT</a></li>
+      <li><a href="skills.html" class="button3" onclick="toggleMenu()">SKILLS</a></li>
+      <li><a href="projects.html" class="button4" onclick="toggleMenu()">PROJECTS</a></li>
+      <li><a href="learnings.html" class="button4" onclick="toggleMenu()">LEARNINGS</a></li>
+      <li><a href="future.html" class="button4" onclick="toggleMenu()">FUTURE</a></li>
+      <li><a href="contact.html" class="button5" onclick="toggleMenu()">LET'S TALK</a></li>
+    </div>
+  </div>
+</nav>
+
+  <section id="contact" class="contact-section">
+    <div class="contact-container">
+      <h2 data-reveal="left" data-reveal-delay=".8s">Let's Connect</h2>
+      <p class="contact-intro" data-reveal="right" data-reveal-delay="1s">
+        Got a project in mind or just want to say hi? Feel free to drop a message — I’d love to hear from you!
+      </p>
+
+      <div class="contact-content" data-reveal="left" data-reveal-delay="1.2s">
+        <!-- Contact Form -->
+        <div class="contact-form-card">
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" name="name" required />
+              <label for="name">Your Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" required />
+              <label for="email">Your Email</label>
+            </div>
+            <div class="form-group">
               <textarea id="message" name="message" rows="5" required></textarea>
-              
-              <button type="submit">Send Message</button>
-            </form>
+              <label for="message">Your Message</label>
+            </div>
+            <button type="submit" class="glass-btn">Send Message</button>
+            <!-- Feedback Message -->
             <p id="formResponse" class="hidden"></p>
-          </div>
-          <div class="contact-icons" data-reveal="top" data-reveal-delay="1.5s">
-            <a href="https://www.facebook.com/lj.navarette/" target="_blank" class="contact-icon">
+          </form>
+        </div>
+
+        <!-- Contact Icons -->
+        <div class="contact-icons-wrapper">
+          <div class="contact-icons-grid">
+            <a href="https://www.facebook.com/lj.navarette/" target="_blank" class="contact-icon-glass">
               <i class="fab fa-facebook-f"></i>
               <span>Facebook</span>
             </a>
-            <a href="mailto:Navarettelyanzjerome@gmail.com" class="contact-icon" onclick="showGmailPopup(); return false;">
+            <a href="mailto:Navarettelyanzjerome@gmail.com" class="contact-icon-glass">
               <i class="fas fa-envelope"></i>
               <span>Email</span>
             </a>
-            
-            <a href="tel:0929889422" class="contact-icon" onclick="showPhonePopup(); return false;">
+            <a href="javascript:void(0);" class="contact-icon-glass" onclick="showPhoneNumber()">
               <i class="fas fa-phone"></i>
               <span>Phone</span>
-            </a>
-            <a href="https://github.com/Jeromeeeeee23" target="_blank" class="contact-icon">
+            </a>            
+            <a href="https://github.com/Jeromeeeeee23" target="_blank" class="contact-icon-glass">
               <i class="fab fa-github"></i>
               <span>GitHub</span>
             </a>
           </div>
         </div>
-      </section>
-      
-      <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-        <script src="script.js"></script>
+      </div>
+    </div>
+  </section>
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

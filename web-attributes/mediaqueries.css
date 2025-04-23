@@ -1,3 +1,10 @@
+
+@media (max-width:1440px) {
+  #tranding {
+    padding: 7rem 0;
+  }
+}
+
 @media screen and (max-width: 1200px){
  
 .nav-links {
@@ -16,7 +23,36 @@
   .text-wrapper { top: 8vh; }
   .text-wrapper1 { top: 24vh; }
   .text-wrapper2 { top: 40vh; }
+  
+  .tranding-slider-control .swiper-button-next {
+    left: 65% !important;
+    transform: translateX(-70%) !important;
+  }
+  .tranding-slider-control .swiper-button-prev {
+    left: 35% !important;
+    transform: translateX(-30%) !important;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .contact-form {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  
+  .contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;  /* This will allow the icons to wrap if needed */
+  }
 }
+
 @media screen and (max-width: 1090px){
    .desktop-nav{
     display: none;
@@ -24,22 +60,27 @@
   #hamburger-nav{
     display: flex;
   }
-  }
-@media screen and (max-width: 1200px){
-  .text1, .text2, .text3 {
-    font-size: 13vw;
-  }
-  .background-Image {
-    height: auto;
-    max-width: 103vh;
-  }
-  .text-wrapper { top: 8vh; }
-  .text-wrapper1 { top: 24vh; }
-  .text-wrapper2 { top: 40vh; }
 
+}
+@media screen and (max-width: 1015px){
+  .skill-card {
+    height: 30vh;
+ }
 
 }
 
+
+
+@media (max-width:990px) {
+  .tranding-slider-control .swiper-button-next {
+    left: 70% !important;
+    transform: translateX(-70%) !important;
+  }
+  .tranding-slider-control .swiper-button-prev {
+    left: 30% !important;
+    transform: translateX(-30%) !important;
+  }
+}
 
 @media (max-width: 768px) {
   .about .wrapper {
@@ -74,7 +115,47 @@
   .text-wrapper { top: 18vh; }
   .text-wrapper1 { top: 28vh; }
   .text-wrapper2 { top: 38vh; }
+
+  .contact-form {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  
+  .contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;  /* Ensure icons stay in a row but wrap if needed */
+  }
+
+  .contact-icon {
+    margin: 10px 0;
+    font-size: 1.5rem;
+  }
+
+  .contact-icons i {
+    font-size: 2rem;
+  }
+
+  .contact-form input, .contact-form textarea {
+    font-size: 1rem;
+    padding: 10px;
+  }
 }
+
+
+
+@media (max-width:500px) {
+  .tranding-slide .tranding-slide-img img {
+    width: 37rem;
+    height: 38rem;
+    }
+    #tranding .tranding-slider {
+    height: 45rem;
+    }
+}
+
+
 
 @media (max-width: 480px) {
   .text1, .text2, .text3 {
@@ -116,38 +197,34 @@
   transform: translateX(-42%);
   filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
 }
-
-  
+.contact-form input, .contact-form textarea {
+  font-size: 1rem;
+  padding: 12px;
 }
 
-
-@media (max-width:1440px) {
-  #tranding {
-    padding: 7rem 0;
-  }
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;  /* Ensures icons stay in a row */
 }
 
-
-@media (max-width:500px) {
-  .tranding-slide .tranding-slide-img img {
-    width: 37rem;
-    height: 38rem;
-    }
-    #tranding .tranding-slider {
-    height: 45rem;
-    }
+.contact-icon {
+  margin: 5px;
 }
 
+.contact-icon span {
+  display: none;  /* Hide text on smaller screens */
+}
 
-@media (max-width:990px) {
-  .tranding-slider-control .swiper-button-next {
-    left: 70% !important;
-    transform: translateX(-70%) !important;
-  }
-  .tranding-slider-control .swiper-button-prev {
-    left: 30% !important;
-    transform: translateX(-30%) !important;
-  }
+.contact-icons i {
+  font-size: 2rem;
+}
+
+.contact-container h2 {
+  font-size: 1.5rem;
+}
+
 }
 
 @media (max-width:450px) {
@@ -161,85 +238,5 @@
   }
 }
 
-/* For screens smaller than 1200px */
-@media screen and (max-width: 1200px) {
-  .contact-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .contact-form {
-    width: 90%;
-    margin-bottom: 20px;
-  }
-  
-  .contact-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;  /* This will allow the icons to wrap if needed */
-  }
-}
 
-/* For screens smaller than 768px */
-@media (max-width: 768px) {
-  .contact-form {
-    width: 100%;
-    font-size: 1.2rem;
-  }
-  
-  .contact-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;  /* Ensure icons stay in a row but wrap if needed */
-  }
-
-  .contact-icon {
-    margin: 10px 0;
-    font-size: 1.5rem;
-  }
-
-  .contact-icons i {
-    font-size: 2rem;
-  }
-
-  .contact-form input, .contact-form textarea {
-    font-size: 1rem;
-    padding: 10px;
-  }
-}
-
-/* For screens smaller than 480px */
-@media (max-width: 480px) {
-  .contact-form input, .contact-form textarea {
-    font-size: 1rem;
-    padding: 12px;
-  }
-
-  .contact-icons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;  /* Ensures icons stay in a row */
-  }
-  
-  .contact-icon {
-    margin: 5px;
-  }
-
-  .contact-icon span {
-    display: none;  /* Hide text on smaller screens */
-  }
-
-  .contact-icons i {
-    font-size: 2rem;
-  }
-
-  .contact-container h2 {
-    font-size: 1.5rem;
-  }
-}
 

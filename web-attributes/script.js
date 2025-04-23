@@ -1,56 +1,53 @@
 'use strict';
 
-
 /**
- * add event listener on multiple elements
+ * Add event listener to multiple elements
  */
-
 const addEventOnElements = function (elements, eventType, callback) {
-  for (let i = 0, len = elements.length; i < len; i++) {
+  for (let i = 0; i < elements.length; i++) {
     elements[i].addEventListener(eventType, callback);
   }
 }
 
-
 /**
- * SCROLL REVEAL
+ * Scroll-based reveal animation using IntersectionObserver
  */
+document.addEventListener('DOMContentLoaded', () => {
+  const revealElements = document.querySelectorAll('[data-reveal]');
 
-const revealElements = document.querySelectorAll("[data-reveal]");
-const revealDelayElements = document.querySelectorAll("[data-reveal-delay]");
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+        revealObserver.unobserve(entry.target); // Animate only once
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
 
-const reveal = function () {
-  for (let i = 0, len = revealElements.length; i < len; i++) {
-    if (revealElements[i].getBoundingClientRect().top < window.innerHeight / 1.2) {
-      revealElements[i].classList.add("revealed");
+  revealElements.forEach(el => {
+    // Handle delay styling from data attribute
+    if (el.dataset.revealDelay) {
+      el.style.transitionDelay = el.dataset.revealDelay;
     }
-  }
-}
-
-for (let i = 0, len = revealDelayElements.length; i < len; i++) {
-  revealDelayElements[i].style.transitionDelay = revealDelayElements[i].dataset.revealDelay;
-}
-
-window.addEventListener("scroll", reveal);
-window.addEventListener("load", reveal);
-
-
-// Scroll-based animations for text elements
-window.addEventListener('scroll', function() {
-  const text1 = document.querySelector('.text1');
-  const text2 = document.querySelector('.text2');
-  const text3 = document.querySelector('.text3');
+    revealObserver.observe(el);
+  });
 });
 
-// Hamburger menu toggle
-function toggleMenu(){
+/**
+ * Hamburger menu toggle
+ */
+function toggleMenu() {
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");
   menu.classList.toggle("open");
   icon.classList.toggle("open");
 }
 
-// Swiper for trending slider
+/**
+ * Swiper initialization
+ */
 var TrandingSlider = new Swiper('.tranding-slider', {
   effect: 'coverflow',
   grabCursor: true,
@@ -73,39 +70,43 @@ var TrandingSlider = new Swiper('.tranding-slider', {
   }
 });
 
-// Form submission with EmailJS
-(function() {
-  emailjs.init("9mtNWvqijNM9ZGmco"); 
+/**
+ * Initialize EmailJS
+ */
+(function () {
+  emailjs.init("9mtNWvqijNM9ZGmco");
 })();
 
-// Form submission event listener
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-  event.preventDefault();  // Prevent default form submission
+/**
+ * Contact form submission
+ */
+document.getElementById('contactForm').addEventListener('submit', function (event) {
+  event.preventDefault();
 
-  // Basic validation
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const message = document.getElementById('message').value;
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const message = document.getElementById('message').value.trim();
+  const responseEl = document.getElementById('formResponse');
 
   if (!name || !email || !message) {
-    document.getElementById('formResponse').textContent = "Please fill in all fields.";
-    document.getElementById('formResponse').classList.remove('hidden');
-    return;  // Don't send the email if validation fails
+    responseEl.textContent = "Please fill in all fields.";
+    responseEl.classList.remove('hidden');
+    return;
   }
 
-  // Send form data to EmailJS
-  emailjs.sendForm('service_a787njk', 'template_j24uw42', event.target)
-    .then(function(response) {
-      console.log('SUCCESS!', response);
-      document.getElementById('formResponse').textContent = "Your message has been sent successfully!";
-      document.getElementById('formResponse').classList.remove('hidden');
-      event.target.reset();  // Reset the form after successful submission
-    }, function(error) {
+  emailjs.sendForm('service_a787njk', 'template_j24uw42', this)
+    .then(function (response) {
+      console.log('SUCCESS!', response.status, response.text);
+      responseEl.textContent = "Your message has been sent successfully!";
+      responseEl.classList.remove('hidden');
+      event.target.reset();
+    }, function (error) {
       console.log('FAILED...', error);
-      document.getElementById('formResponse').textContent = "There was an error sending your message. Please try again.";
-      document.getElementById('formResponse').classList.remove('hidden');
+      responseEl.textContent = "There was an error sending your message. Please try again.";
+      responseEl.classList.remove('hidden');
     });
-
-    
 });
 
+function showPhoneNumber() {
+  alert("📞 You can reach me at: 0929-889-422");
+}
