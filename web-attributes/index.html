@@ -1,293 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="mediaqueries.css">
-  <link rel="icon" href="Pics/alon.png" type="image/x-icon">
-  
-
-  <title>Lyanz Jerome</title>
-</head>
-<body>
-  <nav class="desktop-nav">
-        <div class="logo">Lyanz™</div>
-        <ul class="nav-links">
-        <li> <a href="#BGC" class="button1">HOME</a></li>
-        <li><a href="#about" class="button2">ABOUT</a></li>
-        <li><a href="#services" class="button3">SKILLS</a></li>
-        <li><a href="#projects" class="button4">PROJECTS</a></li>
-        <li><a href="#contact" class="button5">LET'S TALK</a></li>
-        </ul>
-      </div>
-  </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Lyanz™</div>
-        <div class="hamburger-menu">
-          <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-            <div class="menu-links">
-            <li><a href="#BGC" class="button1"  onclick="toggleMenu()"">HOME</a></li>
-            <li><a href="#about" class="button2"  onclick="toggleMenu()">ABOUT</a></li>
-            <li><a href="#services" class="button3"  onclick="toggleMenu()">SKILLS</a></li>
-            <li><a href="#projects" class="button4"  onclick="toggleMenu()">PROJECTS</a></li>
-            <li><a href="#" class="button5"  onclick="toggleMenu()">LET'S TALK</a></li>
-          </div>
-      </div>
-    </nav>
-        <div class="bg-container" id="BGC">
-          <img src="Home.png" alt="Background Image" class="background-Image">
-          <div class="text-wrapper"><p class="text text1">HI  I'M  LYANZ</p></div>
-          <div class="text-wrapper1"><p class="text text2">HI  I'M  LYANZ</p></div>
-          <div class="text-wrapper2"><p class="text text3">HI  I'M  LYANZ</p></div>
-        </div>
-    </div>
-  </div>
-  
-  <hr class="section-divider">
-  <div class="about" id="about">
-    <div class="about-screen">
-      <div>
-        <img src="Pics/me.jpg" alt="picture" class="pic">
-      </div>
-        <div class="about-me">
-          <h1 class="aboutme">About Me!</h1>
-          <p class="text text4">Helloo!! I'm Lyanz Jerome L. Navarette. I'm a self-taught front-end and back-end developer that loves making designs that are both useful and engaging. For me, coding is a combination of logic and creativity, and I like creating projects that challenge my knowledge. In addition to my passion for development, I am an expert photographer who uses each image to tell a story and capture distinctive viewpoints. Beyond stills, dynamic scenarios and angles that give images life are what really pique my interest in cinematography.
-            <br><br>
-            You may also frequently find me with my guitar, performing and creating music that reflects my creative spirit, when I'm not in front of the camera or buried in code. My identity is defined by these hobbies, which also motivate me to study and create every day.</p>
-            <a href="Pics/RESUME-NAVARETTE.pdf" download class="download-cv-btn">Download CV</a>
-        </div>
-    </div>
-    </div>
-    <hr class="section-divider">
-    <div class="services" id="services">
-      <h2>SKILLS</h2>
-      <div class="skills-container">
-        <div class="left-skills">
-          <div class="skill">
-            <span class="skill-name">HTML</span>
-            <div class="progress-bar">
-              <div class="progress" data-percentage="90"></div>
-            </div>
-            <span class="percentage" data-percentage="90">0%</span>
-          </div>
-          <div class="skill">
-            <span class="skill-name">CSS</span>
-            <div class="progress-bar">
-              <div class="progress" data-percentage="90""></div>
-            </div>
-            <span class="percentage" data-percentage="90">0%</span>
-          </div>
-          <div class="skill">
-            <span class="skill-name">JAVASCRIPT</span>
-            <div class="progress-bar">
-              <div class="progress" data-percentage="80"></div>
-            </div>
-            <span class="percentage" data-percentage="80">0%</span>
-          </div>
-          <div class="skill">
-            <span class="skill-name">PHOTOGRAPHY</span>
-            <div class="progress-bar">
-              <div class="progress" data-percentage="90"></div>
-            </div>
-            <span class="percentage" data-percentage="90">0%</span>
-          </div>
-        </div>
-        <div class="right-skills">
-          <div class="skill">
-            <span class="skill-name">CINEMATOGRAPHY</span>
-            <div class="progress-bar">
-              <div class="progress" data-percentage="60"></div>
-            </div>
-            <span class="percentage" data-percentage="60">0%</span>
-          </div>
-          <div class="skill">
-            <span class="skill-name">SINGING</span>
-            <div class="progress-bar">
-              <div class="progress" data-percentage="80"></div>
-            </div>
-            <span class="percentage" data-percentage="80">0%</span>
-          </div>
-          <div class="skill">
-            <span class="skill-name">PLAYING GUITAR</span>
-            <div class="progress-bar">
-              <div class="progress" data-percentage="95"></div>
-            </div>
-            <span class="percentage" data-percentage="95">0%</span>
-          </div>
-          <div class="skill">
-            <span class="skill-name">PHOTO EDITING</span>
-            <div class="progress-bar">
-              <div class="progress" data-percentage="95"></div>
-            </div>
-            <span class="percentage" data-percentage="95">0%</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <hr class="section-divider">
-    <section id="projects">
-      <div class="container">
-        <h3 class="text-center section-subheading">-  Projects  -</h3>
-        <h1 class="text-center section-heading">Photograpy</h1>
-      </div>
-      <div class="container">
-        <div class="swiper tranding-slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="Pics/Angel.JPG" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="Pics/Photo1.jpg" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="Pics/Icay.jpg" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="Pics/Photo2.jpg" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="Pics/Photo3.jpg" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="Pics/Photo4.jpg" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="Pics/Photo5.jpg" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="Pics/Photo6.jpg" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="Pics/photo7.jpg" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="tranding-slider-control">
-              <div class="swiper-button-prev slider-arrow">
-                <ion-icon name="arrow-back-outline"></ion-icon>
-              </div>
-              <div class="swiper-button-next slider-arrow">
-                <ion-icon name="arrow-forward-outline"></ion-icon>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-    </section>
-    <section id="projects">
-      <div class="container">
-        <h1 class="text-center section-heading">Cinematography</h1>
-          </div>
-          <div class="container video-container">
-            <iframe src="https://drive.google.com/file/d/1jpc_p4dGViSfec9BQ02Um0pwu4mXiCnp/preview" width="100%" height="600" allow="autoplay"></iframe>
-          </div>
-        </div>
-    </section>
-    <hr class="section-divider">
-<section id="contact">
-  <div class="contact-container">
-    <h2>Contact Me</h2>
-    <div class="contact-form">
-      <form id="contactForm">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mediaqueries.css">
+        <link rel="icon" href="Pics/alon.png" type="image/x-icon">
         
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-        
-        <button type="submit">Send Message</button>
-      </form>
-      <p id="formResponse" class="hidden"></p>
-    </div>
-    <div class="contact-icons">
-      <a href="https://www.facebook.com/lj.navarette/" target="_blank" class="contact-icon">
-        <i class="fab fa-facebook-f"></i>
-        <span>Facebook</span>
-      </a>
-      <a href="mailto:Navarettelyanzjerome@gmail.com" class="contact-icon" onclick="showGmailPopup(); return false;">
-        <i class="fas fa-envelope"></i>
-        <span>Email</span>
-      </a>
       
-      <a href="tel:0929889422" class="contact-icon" onclick="showPhonePopup(); return false;">
-        <i class="fas fa-phone"></i>
-        <span>Phone</span>
-      </a>
-      <a href="https://github.com/Jeromeeeeee23" target="_blank" class="contact-icon">
-        <i class="fab fa-github"></i>
-        <span>GitHub</span>
-      </a>
-    </div>
-  </div>
-</section>
+        <title>Lyanz Jerome</title>
+      </head>
+      <body>
+        <section class="section nav">
+            <nav class="desktop-nav">
+                <div class="logo">Lyanz™</div>
+                <ul class="nav-links">
+                  <li> <a href="home.html" class="button1">HOME</a></li>
+                  <li><a href="about.html" class="button2">RESUME</a></li>
+                  <li><a href="skills.html" class="button3">SKILLS</a></li>
+                  <li><a href="projects.html" class="button4">PROJECTS</a></li>
+                  <li><a href="learnings.html" class="button4">LEARNINGS</a></li>
+                  <li><a href="future.html" class="button4">FUTURE</a></li>
+                  <li><a href="contact.html" class="button5">LET'S TALK</a></li>
+                </ul>
+              </div>
+            </nav>
+              <nav id="hamburger-nav">
+                <div class="logo">Lyanz™</div>
+                  <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <div class="menu-links">
+                      <li><a href="home.html" class="button1"  onclick="toggleMenu()"">HOME</a></li>
+                      <li><a href="about.html" class="button2"  onclick="toggleMenu()">ABOUT</a></li>
+                      <li><a href="skills.html" class="button3"  onclick="toggleMenu()">SKILLS</a></li>
+                      <li><a href="projects.html" class="button4"  onclick="toggleMenu()">PROJECTS</a></li>
+                      <li><a href="projects.html" class="button4"  onclick="toggleMenu()">LEARNINGS</a></li>
+                      <li><a href="projects.html" class="button4"  onclick="toggleMenu()">FUTURE</a></li>
+                      <li><a href="contact.html" class="button5"  onclick="toggleMenu()">LET'S TALK</a></li>
+                    </div>
+              </nav>
+              
+          </section>
+              <div class="bg-container" id="BGC">
+                <img src="Home.png" alt="Background Image" class="background-Image">
+                <div class="text-wrapper" data-reveal="top" data-reveal-delay="0.2s"><p class="text text1">HI  I'M  LYANZ</p></div>
+                <div class="text-wrapper1"data-reveal="top" data-reveal-delay="0.5s"><p class="text text2">HI  I'M  LYANZ</p></div>
+                <div class="text-wrapper2" data-reveal="top" data-reveal-delay="0.8s"><p class="text text3">HI  I'M  LYANZ</p></div>
+              </div>
+          </div>
+        </div>
+        <section class="section about"  >
 
-<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+          <div class="container" data-reveal="top" data-reveal-delay="0.8s">
+
+            <div class="wrapper">
+
+              <div data-reveal="left" data-reveal-delay="0.8s">
+                <img src="Pics/me.jpg" alt="picture" class="pic" />
+              </div>
+
+              <div data-reveal="right" data-reveal-delay="1s">
+                <h1 class="about-me-header" >About Me!</h1>
+              <div data-reveal="right" data-reveal-delay="1.2s">
+                <p class="text text4" >Helloo!! I'm Lyanz Jerome L. Navarette. I'm a self-taught front-end and back-end developer that loves making designs 
+                    that are both useful and engaging. For me, coding is a combination of logic and creativity, and 
+                    I like creating projects that challenge my knowledge. In addition to my passion for development, 
+                    I am an expert photographer who uses each image to tell a story and capture distinctive viewpoints. 
+                    Beyond stills, dynamic scenarios and angles that give images life are what really 
+                    pique my interest in cinematography. You may also frequently find me with my guitar, performing and creating music 
+                    that reflects my creative spirit, when I'm not in front of the camera or buried in code. 
+                    My identity is defined by these hobbies, which also motivate me to study and create every day.</p>
+              </div>
+                
+               
+            </div>
+          </div>
+      </section>
+      <section class="section family">
+        <div class="container-family" data-reveal="top" data-reveal-delay="0.8s">
+          <div class="wrapper-family">
+            <div class="family-header">
+              <h2 data-reveal="top" data-reveal-delay="0.5s">Family Background</h2>
+            </div>
+    
+            <div class="family-grid">
+    
+              <div class="family-card" data-reveal="bottom" data-reveal-delay="0.3s">
+                <img src="Pics/mama.jpg" alt="picture" class="pic1" />
+                <h3>Opalyn</h3>
+                <p>This is my mother. She is from Lubao, Pampanga and a sweet and loving mother. She is a stay at home mom
+                  that take care of us all and is my motivation to keep on pursuing my dreams to be able to give back
+                  everything she did for us. She is an amazing mother and I wouldn't exchange her for anyone.
+                </p>
+              </div>
+    
+              <div class="family-card" data-reveal="bottom" data-reveal-delay="0.5s">
+                <img src="Pics/papa.jpg" alt="picture" class="pic1" />
+                <h3>Aries</h3>
+                <p>This is my father. He sacrif iced half of his life working in abroad to be able to give us a proper
+                  education. He is now a work from home call center agent. He is an admirable father and his dedication and
+                  love for our family is the reason I am the man I am today.
+                </p>
+              </div>
+    
+              <div class="family-card" data-reveal="bottom" data-reveal-delay="0.7s">
+                <img src="Pics/kurt.jpg" alt="picture" class="pic1" />
+                <h3>Kurt</h3>
+                <p>This is my brother, 2nd eldest with me being the eldest of us 4 siblings. He is also a Computer Science student.
+                  Like me he is also fond in photography and using the guitar. He is also intelligent and 
+                  one of top in his class. He is my other half in my family.
+                </p>
+              </div>
+    
+              <div class="family-card" data-reveal="bottom" data-reveal-delay="0.9s">
+                <img src="Pics/kirsten.jpg" alt="picture" class="pic1" />
+                <h3>Kirsten</h3>
+                <p>This is my little sister. She is the 2nd youngest and the only girl in our family. Which makes her our
+                  little princess. She is a smart and beautiful young lady. I admire her for her constant perseverance at school
+                  despite not being able to go to a private school, she still strives and is the top 1 in her class.
+                </p>
+              </div>
+    
+              <div class="family-card" data-reveal="bottom" data-reveal-delay="1.1s">
+                <img src="Pics/liam.jpg" alt="picture" class="pic1" />
+                <h3>Liam</h3>
+                <p>This is our youngest sibling. He is the most spoiled and stubborn kid among us. He is also smart and is also top 
+                  in his class. I admire him for having so much talent in doing anything without the help of anyone. Which reminds
+                  me so much of myself. He is talented in multiple ways and is also intelligent, at young ages he taught himself to play
+                  the drums and piano by himself while watching youtube.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+        
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
-
 </body>
 </html>
